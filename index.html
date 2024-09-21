@@ -37,7 +37,7 @@
 <body>
 
   <!-- Sign-up form start -->
-  <section>
+  <section id="main-section">
     <div id="content">
       <h1>Stay updated!</h1>
 
@@ -53,6 +53,8 @@
         <label for="email">Email address</label>
         <input id="email" type="email" name="email" placeholder="email@company.com">
       </div>
+      <div id="no-email" class="hidden warning">Please enter an email address!</div>
+      <div id="no-valid-email" class="hidden warning">Please enter a valid email address!</div>
 
       <button id="subscribe">Subscribe to monthly newsletter</button>
     </div>
@@ -61,13 +63,10 @@
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-  <section class="hidden">
-    Thanks for subscribing!
-
-    A confirmation email has been sent to ash@loremcompany.com.
-    Please open it and click the button inside to confirm your subscription.
-
-    Dismiss message
+  <section id="success-section" class="hidden">
+    <div><img id="success-img" src="./assets/images/icon-success.svg"></div>
+    <div id="message"></div>
+    <button id="dismiss">Dismiss message</button>
   </section>
   <!-- Success message end -->
 

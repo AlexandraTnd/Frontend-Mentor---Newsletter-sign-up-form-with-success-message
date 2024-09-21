@@ -20,8 +20,18 @@ section {
     border-radius: 15px;
 }
 
+section#success-section {
+    flex-direction: column;
+    max-width: 500px;
+    padding: 20px;
+}
+
 .hidden {
     display: none;
+}
+
+.warning {
+    color: hsl(4, 100%, 67%);
 }
 
 #content {
@@ -74,4 +84,12 @@ button {
 button:hover {
     cursor: pointer;
     background-color: hsl(4, 100%, 67%);
+}
+
+#success-img {
+    height: 50px;
+}
+
+#dismiss {
+    margin-top: 15px;
 }
