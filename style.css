@@ -51,9 +51,12 @@ label {
 }
 
 input {
+    margin-top: 5px;
     display: block;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 7%, 60%);
 }
 
 button {
@@ -61,4 +64,5 @@ button {
     background-color: hsl(235, 18%, 26%);
     color: hsl(0, 0%, 100%);
     padding: 10px;
+    border-radius: 5px;
 }
