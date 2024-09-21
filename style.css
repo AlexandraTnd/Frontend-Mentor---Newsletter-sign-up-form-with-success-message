@@ -93,3 +93,26 @@ button:hover {
 #dismiss {
     margin-top: 15px;
 }
+
+#desktop-image {
+    display: block;
+}
+
+#mobile-image {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    section {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    #desktop-image {
+        display: none;
+    }
+
+    #mobile-image {
+        display: block;
+    }
+}
